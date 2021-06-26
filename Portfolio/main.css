@@ -1,0 +1,114 @@
+body {
+    color: #374251;
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    color: #374251;
+}
+
+main {
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 360%;
+    font-weight: 700;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+}
+
+span.intro {
+    color: black;
+    font-size: 700;
+    font-family: 'Rubik', sans-serif;
+}
+
+.hand {
+    margin-left: 1.5%;
+    position: absolute;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+article p {
+    font-size: 160%;
+    line-height: 160%;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+article a:hover {
+   color:darkorange;
+}
+
+#footer {
+    margin-top: 10%;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+}
+
+/* media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 80%;
+    }
+    h1 {
+        font-size: 440%;
+        margin-bottom: 7%;
+    }
+    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+      body {
+          font-size: 90%;
+      }
+
+      h1 {
+          font-size: 380%;
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+        font-size: 95%;
+    }
+
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 400%;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: darkgrey;
+    }
+
+    a {
+        color: darkgrey;
+    }
+
+    span.intro {
+        color: white;
+    }
+
+    footer {
+        color: white;
+    }
+
+}
