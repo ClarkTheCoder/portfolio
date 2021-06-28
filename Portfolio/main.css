@@ -71,26 +71,21 @@ article a:hover {
       h1 {
           font-size: 3.8em;
       }
-
-      body {
-          background-color: lightblue;
-      }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     body {
-        font-size: 95%;
-    }
+        font-size: .95em;
 
   }  
   
   /* Large devices (laptops/desktops, 992px and up) */
-  /* @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     h1 {
-        font-size: 400%;
+        font-size: 4.2em;
     }
-  }  */
+  }  
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   /* @media only screen and (min-width: 1200px) {
