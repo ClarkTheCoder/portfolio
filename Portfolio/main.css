@@ -28,16 +28,20 @@ h1 span#carson {
     color: white;
     animation-name: example;
     animation-duration: 5s;
+    animation-delay: 1s;
 }
 
 h1 span#carson:hover {
-    color: yellow;
-
+    color: #FFDC00;
 }
 
 @keyframes example {
     from {color: white;}
-    to {color: yellow;}
+    to {color: #FFDC00;}
+  }
+
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
   }
 
 article p {
@@ -48,7 +52,7 @@ article p {
 }
 
 article a:hover {
-    color: yellow;
+    color: #FFDC00;
  }
 
  #footer {
@@ -59,6 +63,10 @@ article a:hover {
 footer p {
     font-size: 1rem;
     text-align: center;
+}
+
+footer p:hover {
+    color: #FFDC00;
 }
 
 @media only screen and (max-width: 760px) {
