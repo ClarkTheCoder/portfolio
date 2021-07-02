@@ -123,6 +123,10 @@ footer p:hover {
         color: white;
     }
 
+    h1 span#carson:hover {
+        color: #FFDC00;
+    }
+
     article a:hover {
         color: #FFDC00;
      }
@@ -130,6 +134,7 @@ footer p:hover {
     span.intro {
         color: white;
     }
+    
 
     footer {
         color: white;
