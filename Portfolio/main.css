@@ -1,92 +1,110 @@
 body {
-    color: #374251;
     font-family: 'Rubik', sans-serif;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#hand {
+    margin-left: .5%;
 }
 
 a {
     color: #374251;
 }
 
-main {
-    margin-top: 5%;
-}
-
 h1 {
-    font-size: 3.6em;
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 5%;
+    margin-top: 10%;
     letter-spacing: 1px;
 }
 
-span.intro {
-    color: black;
-    font-size: 700;
-    font-family: 'Rubik', sans-serif;
+h1 span#carson {
+    color: white;
+    animation-name: example;
+    animation-duration: 5s;
 }
 
+h1 span#carson:hover {
+    color: yellow;
+
+}
+
+@keyframes example {
+    from {color: white;}
+    to {color: yellow;}
+  }
 
 article p {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 160%;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 }
 
 article a:hover {
-   color:darkorange;
-}
+    color: yellow;
+ }
 
-#footer {
+ #footer {
     margin-top: 10%;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 500;
 }
 
-/* media queries */
+footer p {
+    font-size: 1rem;
+    text-align: center;
+}
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: .8em;
+@media only screen and (max-width: 760px) {
+    article p{
+        font-size: 1.3rem;
     }
+
+    #container {
+        width: 90%;
+    }
+
     h1 {
-        font-size: 4.4em;
+        font-size: 3.7rem;
         margin-bottom: 7%;
+    }
+
+    footer p{
+        font-size: .8rem;  
     }
     
   }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-      body {
-          font-size: .9em;
-      }
 
-      h1 {
-          font-size: 3.8em;
-      }
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    body {
-        font-size: .95em;
-    }
-  }  
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+
+@media only screen and (min-width: 768px) {
+
     h1 {
-        font-size: 4.2em;
+        font-size: 3.7rem;
+    }
+
+    #container {
+        width: 80%;
     }
   }  
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  /* @media only screen and (min-width: 1200px) {
 
-  } */
+  @media only screen and (min-width: 992px) {
+    
+    #container {
+        width: 70%;
+    }
+    
+    h1 {
+        font-size: 4.2rem;
+    }
+    
+  }  
 
-  
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
@@ -106,4 +124,5 @@ article a:hover {
     }
 
 }
+
 
