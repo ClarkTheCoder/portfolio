@@ -13,26 +13,26 @@ a {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.3rem;
     font-weight: 700;
     margin-top: 10%;
     letter-spacing: 1px;
 }
 
 h1 span#carson {
-    color: white;
-    animation-name: example;
-    animation-duration: 5s;
-    animation-delay: 1s;
+    color: black;
+    animation-name: h1-color-light;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 
 h1 span#carson:hover {
-    color: #FFDC00;
+    color: #0074D9;
 }
 
-@keyframes example {
-    from {color: white;}
-    to {color: #FFDC00;}
+@keyframes h1-color-light {
+    from {color: black;}
+    to {color: #0074D9;}
   }
 
   .animate__animated.animate__fadeIn {
@@ -40,14 +40,14 @@ h1 span#carson:hover {
   }
 
 article p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 160%;
     font-weight: 300;
     letter-spacing: .5px;
 }
 
 article a:hover {
-    color: #FFDC00;
+    color: #0074D9;
  }
 
  #footer {
@@ -61,12 +61,12 @@ footer p {
 }
 
 footer p:hover {
-    color: #FFDC00;
+    color: #0074D9;
 }
 
 @media only screen and (max-width: 760px) {
-    article p{
-        font-size: 1.3rem;
+    article p {
+        font-size: 1.5rem;
     }
 
     #container {
@@ -75,7 +75,7 @@ footer p:hover {
 
     h1 {
         font-size: 3.7rem;
-        margin-bottom: 7%;
+        margin-bottom: 9%;
     }
 
     footer p{
@@ -118,6 +118,14 @@ footer p:hover {
         color: darkgrey;
     }
 
+    h1 span#carson {
+        color: white;
+    }
+
+    article a:hover {
+        color: #FFDC00;
+     }
+
     span.intro {
         color: white;
     }
@@ -125,6 +133,22 @@ footer p:hover {
     footer {
         color: white;
     }
+
+    footer p:hover {
+        color: #FFDC00;
+    }
+
+    h1 span#carson {
+        color: white;
+        animation-name: h1-color-dark;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }
+
+    @keyframes h1-color-dark {
+        from {color: white;}
+        to {color: #FFDC00;}
+      }
 
 }
 
