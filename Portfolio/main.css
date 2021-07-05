@@ -117,13 +117,17 @@ footer p:hover {
     .btn {
         margin-bottom: 15%;
         font-size: .9rem;
-        padding: 12px;
+        padding: 10px;
+     }
+
+     .btn a {
+         font-size: .8rem;
      }
 
      .btn:hover {
         margin-bottom: 15%;
         font-size: .9rem;
-        padding: 12px;
+        padding: 10px;
      }
 
     footer p{
