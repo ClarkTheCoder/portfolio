@@ -12,6 +12,10 @@ a {
     color: #374251;
 }
 
+p {
+    text-transform: lowercase;
+}
+
 h1 {
     font-size: 4.3rem;
     font-weight: 700;
@@ -20,19 +24,19 @@ h1 {
 }
 
 h1 span#carson {
-    color: black;
+    color: #6a00ff;
     animation-name: h1-color-light;
     animation-duration: 3s;
     animation-delay: 0s;
 }
 
 h1 span#carson:hover {
-    color: #0074D9;
+    color: #6a00ff;
 }
 
 @keyframes h1-color-light {
     from {color: black;}
-    to {color: #0074D9;}
+    to {color: #6a00ff;}
   }
 
   .animate__animated.animate__fadeIn {
@@ -47,8 +51,29 @@ article p {
 }
 
 article a:hover {
-    color: #0074D9;
+    color: #6a00ff;
  }
+
+ .btn {
+    border-radius: 5px;
+    background-color: #6a00ff;
+    padding: 1.5% 2.5%;
+    width: 20%;
+    text-align: center;
+    margin-top: 8%;
+ }
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+}
+
+.btn a:hover {
+    color: white;
+    background-color: ;
+}
 
  #footer {
     margin-top: 10%;
@@ -64,7 +89,7 @@ footer p:hover {
     color: #0074D9;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
     #container {
         width: 90%;
     }
@@ -75,8 +100,15 @@ footer p:hover {
     }
     
     article p {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
+        line-height: 160%;
     }
+
+    .btn {
+        margin-bottom: 15%;
+        width: 30%;
+        font-size: .9rem;
+     }
 
     footer p{
         font-size: .8rem;  
@@ -95,6 +127,14 @@ footer p:hover {
         font-size: 3.7rem;
     }
 
+    article p {
+        font-size: 1.7rem;
+    }
+
+    footer p{
+        font-size: .9rem;
+    }
+
   }  
 
   @media only screen and (min-width: 992px) {
@@ -105,6 +145,10 @@ footer p:hover {
     
     h1 {
         font-size: 4.2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
     }
     
   }  
@@ -120,7 +164,7 @@ footer p:hover {
     }
 
     h1 span#carson {
-        color: white;
+        color: #FFDC00;
     }
 
     h1 span#carson:hover {
@@ -135,6 +179,17 @@ footer p:hover {
         color: white;
     }
     
+    .btn {
+        background-color: #FFDC00;
+    }
+
+    .btn a {
+        color: black;
+    }
+
+    .btn a:hover {
+        color: black;
+    }
 
     footer {
         color: white;
@@ -145,9 +200,9 @@ footer p:hover {
     }
 
     h1 span#carson {
-        color: white;
+        color: #FFDC00;
         animation-name: h1-color-dark;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-delay: 0s;
     }
 
