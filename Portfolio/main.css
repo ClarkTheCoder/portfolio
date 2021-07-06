@@ -1,8 +1,10 @@
 body {
     font-family: 'Rubik', sans-serif;
+    background-color: #F5F7F9;
 }
 
 #container {
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -12,12 +14,8 @@ a {
     color: #374251;
 }
 
-p {
-    text-transform: lowercase;
-}
-
 h1 {
-    font-size: 4.4rem;
+    font-size: 4.7rem;
     font-weight: 700;
     margin-top: 10%;
     letter-spacing: 1px;
@@ -48,134 +46,245 @@ article p {
     line-height: 160%;
     font-weight: 300;
     letter-spacing: .5px;
+    text-transform: lowercase;
 }
 
 article a:hover {
     color: #6a00ff;
  }
 
- .btn {
+ .portfolioBtn  {
+    display: inline-block;
     border-radius: 5px;
     background-color: #6a00ff;
     cursor: pointer;
     padding: 1.5% 2.5%;
-    width: 20%;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 2%;
  }
 
-.btn a {
+.portfolioBtn a {
     color: white;
     text-decoration: none;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 500;
+    font-weight: 100;
+    font-size: 1.2rem;
 }
 
-.btn:hover {
+.portfolioBtn:hover {
     border-radius: 5px;
     background-color: #6000e6;
     cursor: pointer;
-    padding: 1.5% 2.5%;
-    width: 20%;
     text-align: center;
-    margin-top: 8%;
  }
 
-.btn a:hover {
+.portfolioBtn a:hover {
     color: white;
 }
 
  #footer {
-    margin-top: 10%;
+    margin-top: 17%;
     font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    text-transform: lowercase;
 }
 
 footer p {
+    margin: 0 auto;
+}
+
+footer p, footer a {
     font-size: 1rem;
-    text-align: center;
+    line-height: 160%;
+    font-weight: 300;
+    letter-spacing: .5px;
 }
 
 footer p:hover {
     color: #0074D9;
 }
 
-@media only screen and (max-width: 767px) {
-    #container {
-        width: 90%;
-    }
-    
-    h1 {
-        font-size: 3.7rem;
-        margin-bottom: 9%;
-    }
-    
-    article p {
-        font-size: 1.45rem;
-        line-height: 160%;
-    }
+/* PORTFOLIO */
 
-    .btn {
-        margin-bottom: 15%;
-        font-size: .9rem;
-        padding: 10px;
-     }
+.portfolio {
+    margin: 0 auto;
+    width: 90%;
+}
 
-     .btn a {
-         font-size: .8rem;
-     }
+#portfolio-header {
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 300;
+}
 
-     .btn:hover {
-        margin-bottom: 15%;
-        font-size: .9rem;
-        padding: 10px;
-     }
+/* acts as container for project page */
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #27313B;
+}
 
-    footer p{
-        font-size: .8rem;  
-    }
-    
-  }
+.project {
+    width: 420px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 0 7px 0 rgb(30 45 62 / 9%);
+    margin: 1%;
+    transition: transform .2s;
+    cursor: pointer;
+}
 
+.project:hover {
+    transform: scale(1.02);
+}
 
-@media only screen and (min-width: 768px) {
+.project-container {
+    padding: 2% 3%;
+}
+
+.project-container .tags {
+    color: #78828E;
+    font-size: .7rem;
+}
+
+.project-container h4 {
+    color: #36424D;
+}
+
+.project-container p {
+    letter-spacing: .02rem;
+}
+
+.project h4 {
+    font-size: 1.4rem;
+    margin: 5px 0%;
+}
+
+.project img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project:nth-child(1) {
+    animation: backInLeft;
+    animation-duration: 2s;
+}
+
+.project:nth-child(2){
+    animation: backInRight;
+    animation-duration: 2s;
+}
+
+.project:nth-child(3) {
+    animation: backInDown;
+    animation-duration: 2s;
+}
+
+.project:nth-child(4) {
+    animation: backInDown;
+    animation-duration: 2s;
+}
+
+/* MEDIA QUERIES / DARK THEME */
+
+  @media only screen and (max-width: 1024px) {
 
     #container {
         width: 80%;
     }
 
     h1 {
-        font-size: 3.7rem;
+        font-size: 4.4rem;
     }
 
     article p {
-        font-size: 1.7rem;
-    }
-
-    footer p{
-        font-size: .9rem;
-    }
-
-  }  
-
-  @media only screen and (min-width: 992px) {
-    
-    #container {
-        width: 70%;
-    }
-    
-    h1 {
-        font-size: 4.2rem;
-    }
-
-    article p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     footer p {
         font-size: 1rem;
     }
-    
-  }  
+
+  }
+
+@media only screen and (max-width: 907px) {
+    #container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    article p {
+        font-size: 1.5rem;
+    }
+
+    footer p, footer a {
+        font-size: .9rem;
+    }
+
+  }
+
+@media only screen and (max-width: 530px) {
+   
+    #container {
+       width: 90%;
+   }
+   
+    h1 {
+        font-size: 3.7rem;
+    }
+
+    article p {
+        font-size: 1.3rem;
+    }
+
+    .portfolioBtn {
+        padding: 2.5% 4%;
+        margin-bottom: 20px;
+     }
+
+    .portfolioBtn a {
+         font-size: .9rem;
+     }
+
+     footer p, footer a{
+         font-size: .8rem;
+     }
+
+  }
+
+  @media only screen and (max-width: 360px) {
+   
+    #container {
+       width: 90%;
+   }
+   
+    h1 {
+        font-size: 3rem;
+    }
+
+    article p {
+        font-size: 1.2rem;
+    }
+
+    .portfolioBtn {
+        padding: 2.5% 4%;
+        margin-bottom: 20px;
+     }
+
+    .bportfolioBtn a {
+         font-size: .9rem;
+     }
+
+     footer p, footer a {
+         font-size: .6rem;
+     }
+
+  }
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -191,10 +300,6 @@ footer p:hover {
         color: #FFDC00;
     }
 
-    h1 span#carson:hover {
-        color: #FFDC00;
-    }
-
     article a:hover {
         color: #FFDC00;
      }
@@ -203,20 +308,20 @@ footer p:hover {
         color: white;
     }
     
-    .btn {
+    .portfolioBtn {
         background-color: #FFDC00;
         cursor: pointer;
     }
 
-    .btn:hover {
+    .portfolioBtn:hover {
         background-color: #e6c700;
     }
 
-    .btn a {
+    .portfolioBtn a {
         color: black;
     }
 
-    .btn a:hover {
+    .portfolioBtn    a:hover {
         color: black;
     }
 
@@ -239,6 +344,27 @@ footer p:hover {
         from {color: white;}
         to {color: #FFDC00;}
       }
+
+    /* Portfolio Page DARK */
+    .portfolio {
+        color: #f2f2f3;
+    }
+
+    .portfolio-header {
+       color: #f2f2f3;
+    }
+
+    .project img {
+        border-radius: 3px;
+    }
+
+    .project p {
+        color: darkgray;
+    }
+
+    .project span {
+        color: white;
+    }
 
 }
 
