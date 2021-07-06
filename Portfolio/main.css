@@ -28,9 +28,6 @@ h1 span#carson {
     animation-delay: 0s;
 }
 
-h1 span#carson:hover {
-    color: #6a00ff;
-}
 
 @keyframes h1-color-light {
     from {color: black;}
