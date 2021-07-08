@@ -43,7 +43,6 @@ article p {
     line-height: 160%;
     font-weight: 300;
     letter-spacing: .5px;
-    text-transform: lowercase;
 }
 
 article a:hover {
@@ -137,7 +136,7 @@ footer a:hover {
     border-radius: 3px;
     background-color: white;
     box-shadow: 0 0 7px 0 rgb(30 45 62 / 9%);
-    margin: 1%;
+    margin: 2%;
     transition: transform .2s;
     cursor: pointer;
 }
