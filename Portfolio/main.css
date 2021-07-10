@@ -3,6 +3,10 @@ body {
     background-color: #F5F7F9;
 }
 
+a {
+    color: #374251;
+}
+
 #container {
     width: 80%;
     margin: 0 auto;
@@ -10,25 +14,12 @@ body {
     justify-content: center;
 }
 
-button {
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
-a {
-    color: #374251;
-}
-
 h1 {
     font-size: 4.7rem;
     font-weight: 700;
     margin-top: 10%;
     letter-spacing: 1px;
+    color: #374251;
 }
 
 h1 span#carson {
@@ -38,14 +29,9 @@ h1 span#carson {
     animation-delay: 0s;
 }
 
-@keyframes h1-color-light {
-    from {color: black;}
-    to {color: #6a00ff;}
-  }
-
-  .animate__animated.animate__fadeIn {
-    --animate-duration: 3s;
-  }
+p span.stand-out {
+    color: #374251;
+}
 
 article p {
     font-size: 1.8rem;
@@ -54,38 +40,21 @@ article p {
     letter-spacing: .5px;
 }
 
-article a:hover {
-    color: #6a00ff;
+article a#ig:hover {
+    color: #fc4e5b;
  }
 
- .portfolioBtn  {
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #6a00ff;
-    cursor: pointer;
-    padding: 1.5% 2.5%;
-    text-align: center;
-    margin-top: 4%;
+ article a#twitter:hover {
+    color: #fc4e5b;
  }
 
-.portfolioBtn a {
-    color: white;
-    text-decoration: none;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-.portfolioBtn:hover {
-    border-radius: 5px;
-    background-color: #6000e6;
-    cursor: pointer;
-    text-align: center;
+ article a#Linkedin:hover {
+    color: #fc4e5b;
  }
 
-.portfolioBtn a:hover {
-    color: white;
-}
+ article a#github:hover {
+    color: #fc4e5b;
+ }
 
  #footer {
     margin-top: 15%;
@@ -116,88 +85,6 @@ footer a {
 
 footer a:hover {
     color: #6a00ff;
-}
-
-/* PORTFOLIO */
-
-.portfolio {
-    margin: 0 auto;
-    width: 80%;
-}
-
-#portfolio-header {
-    text-align: center;
-    font-size: 4.2rem;
-    font-weight: 300;
-}
-
-/* acts as container for project page */
-#projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: #27313B;
-}
-
-.project {
-    width: 420px;
-    border-radius: 3px;
-    box-shadow: 0 0 7px 0 rgb(30 45 62 / 9%);
-    margin: 2%;
-    transition: transform .2s;
-    cursor: pointer;
-}
-
-.project:hover {
-    transform: scale(1.02);
-}
-
-.project-container {
-    padding: 2% 3%;
-}
-
-.project-container .tags {
-    color: #78828E;
-    font-size: .8rem;
-}
-
-.project-container h4 {
-    color: #36424D;
-}
-
-.project-container p {
-    letter-spacing: .02rem;
-}
-
-.project h4 {
-    font-size: 1.4rem;
-    margin: 5px 0%;
-}
-
-.project img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.project:nth-child(1) {
-    animation: backInLeft;
-    animation-duration: 2s;
-}
-
-.project:nth-child(2){
-    animation: backInRight;
-    animation-duration: 2s;
-}
-
-.project:nth-child(3) {
-    animation: backInDown;
-    animation-duration: 2s;
-}
-
-.project:nth-child(4) {
-    animation: backInDown;
-    animation-duration: 2s;
 }
 
 /* MEDIA QUERIES */
@@ -255,15 +142,6 @@ footer a:hover {
         font-size: 1.3rem;
     }
 
-    .portfolioBtn {
-        padding: 2.5% 4%;
-        margin-bottom: 20px;
-     }
-
-    .portfolioBtn a {
-         font-size: .9rem;
-     }
-
      footer p, footer a{
          font-size: .8rem;
      }
@@ -284,15 +162,6 @@ footer a:hover {
         font-size: 1.2rem;
     }
 
-    .portfolioBtn {
-        padding: 2.5% 4%;
-        margin-bottom: 20px;
-     }
-
-    .bportfolioBtn a {
-         font-size: .9rem;
-     }
-
      footer p, footer a {
          font-size: .6rem;
      }
@@ -312,8 +181,16 @@ footer a:hover {
         color: darkgrey;
     }
 
+    h1 {
+        color: #D8DADC
+    }
+
     h1 span#carson {
         color: #FFDC00;
+    }
+
+    p span.stand-out {
+        color: #D8DADC
     }
 
     article a:hover {
@@ -322,23 +199,6 @@ footer a:hover {
 
     span.intro {
         color: white;
-    }
-    
-    .portfolioBtn {
-        background-color: #FFDC00;
-        cursor: pointer;
-    }
-
-    .portfolioBtn:hover {
-        background-color: #e6c700;
-    }
-
-    .portfolioBtn a {
-        color: black;
-    }
-
-    .portfolioBtn    a:hover {
-        color: black;
     }
 
     footer {
@@ -349,50 +209,6 @@ footer a:hover {
         color: #FFDC00;
     }
 
-    h1 span#carson {
-        color: #FFDC00;
-        animation-name: h1-color-dark;
-        animation-duration: 5s;
-        animation-delay: 0s;
-    }
-
-    @keyframes h1-color-dark {
-        from {color: white;}
-        to {color: #FFDC00;}
-      }
-
-    /* Portfolio Page DARK */
-    .portfolio {
-        color: #D8DADC;
-    }
-
-    .portfolio-header {
-       color: #D8DADC;
-    }
-
-    .project-container {
-        background-color: #1B1B1C;
-    }
-
-    .project h4 {
-        color: #D8DADC;
-    }
-
-    .project img {
-        border-radius: 3px;
-    }
-
-    .project p {
-        color: #D8DADC;
-    }
-
-    #footer a{
-        color: white;
-    }
-
-    #footer a:hover {
-        color: #FFDC00;
-    }
 
 }
 
