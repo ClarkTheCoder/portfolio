@@ -8,10 +8,15 @@ a {
 }
 
 #container {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
 }
 
 h1 {
@@ -25,8 +30,6 @@ h1 {
 h1 span#carson {
     color: #6a00ff;
     animation-name: h1-color-light;
-    animation-duration: 3s;
-    animation-delay: 0s;
 }
 
 p span.stand-out {
@@ -45,24 +48,21 @@ article a#ig:hover {
  }
 
  article a#twitter:hover {
-    color: #fc4e5b;
+    color: #1ba8ff;
  }
 
- article a#Linkedin:hover {
-    color: #fc4e5b;
+ article a#linkedin:hover {
+    color: #0075b4;
+ }
+
+ article a#yt:hover {
+    color: #FF0000;
  }
 
  article a#github:hover {
-    color: #fc4e5b;
+     color: magenta;
  }
 
- article a#github:hover {
-    color: #fc4e5b;
- }
- 
- article a#github:hover {
-    color: #fc4e5b;
- }
 
  #footer {
     margin-top: 15%;
