@@ -16,7 +16,7 @@ a {
 
 main {
     animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s; /* don't forget to set a duration! */
+    animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 h1 {
@@ -182,15 +182,15 @@ footer a:hover {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
-        color: darkgrey;
+        color: #D8DADC;
     }
 
     a {
-        color: darkgrey;
+        color: #D8DADC;
     }
 
     h1 {
-        color: #D8DADC
+        color: #FFF;
     }
 
     h1 span#carson {
@@ -198,7 +198,7 @@ footer a:hover {
     }
 
     p span.stand-out {
-        color: #D8DADC
+        color: #FFF;
     }
 
     article a:hover {
