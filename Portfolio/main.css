@@ -19,22 +19,23 @@
 body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--bg-color);
+
 }
 
 a {
     color: var(--font-color);
 }
 
-#container {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
 main {
     animation: fadeIn; 
     animation-duration: 3s; 
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .theme-switch-wrapper {
@@ -100,8 +101,24 @@ h1 {
     color: var(--standout);
 }
 
-h1 span {
-   margin-left: 1%;
+h1 span#hand{
+   margin-left: 1%; 
+   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+   animation-duration: 2.5s;        /* Change to speed up or slow down */
+   animation-iteration-count: infinite;  /* Never stop waving :) */
+   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+   display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
 
 p span.stand-out {
@@ -249,49 +266,5 @@ footer a:hover {
      }
 
   }
-
- 
- /* DARK THEME STYLES */ 
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: #999999;
-    }
-
-    a {
-        color: #999999;
-    }
-
-    h1 {
-        color: #FFF;
-    }
-
-    h1 span#carson {
-        color: #FFDC00;
-    }
-
-    p span.stand-out {
-        color: #FFF;
-    }
-
-    article a:hover {
-        color: #FFDC00;
-     }
-
-    span.intro {
-        color: white;
-    }
-
-    footer {
-        color: white;
-    }
-
-    footer p:hover {
-        color: #FFDC00;
-    }
-
-
-}
 
 
