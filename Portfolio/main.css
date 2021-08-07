@@ -19,7 +19,6 @@
 body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--bg-color);
-
 }
 
 a {
@@ -34,7 +33,7 @@ main {
 #container {
     display: flex;
     justify-content: center;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -188,7 +187,7 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1043px) {
 
     #container {
         width: 80%;
@@ -198,6 +197,9 @@ footer a:hover {
         font-size: 4.4rem;
     }
 
+    h1 span#hand {
+        font-size: 3.5rem;
+    }
     article p {
         font-size: 1.6rem;
     }
@@ -208,13 +210,17 @@ footer a:hover {
 
   }
 
-@media only screen and (max-width: 907px) {
+@media only screen and (max-width: 962px) {
     #container {
         width: 90%;
     }
 
     h1 {
         font-size: 4.2rem;
+    }
+
+    h1 span#hand {
+        font-size: 3.3rem;
     }
 
     article p {
@@ -237,6 +243,10 @@ footer a:hover {
         font-size: 3.7rem;
     }
 
+    h1 span#hand {
+        font-size: 3rem;
+    }
+
     article p {
         font-size: 1.3rem;
     }
@@ -255,6 +265,10 @@ footer a:hover {
    
     h1 {
         font-size: 3rem;
+    }
+
+    h1 span#hand {
+        font-size: 2.2srem;
     }
 
     article p {
