@@ -1,10 +1,28 @@
+:root {
+    --font-color: #374251;
+    --slider-color: #374351;
+    --bg-color: #F5F7F9;
+    --standout: #374251;
+    --footer-color: #374251;
+    --footer-hover: #6000e6;
+}
+
+[data-theme="dark"] {
+    --font-color: #999999;
+    --bg-color: black;
+    --slider-color: #f3f3f3;
+    --standout: white;
+    --footer-color: white;
+    --footer-hover: #FFDC00;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
-    background-color: #F5F7F9;
+    background-color: var(--bg-color);
 }
 
 a {
-    color: #374251;
+    color: var(--font-color);
 }
 
 #container {
@@ -15,25 +33,79 @@ a {
 }
 
 main {
-    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
+    animation: fadeIn; 
+    animation-duration: 3s; 
 }
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: var(--slider-color);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: var(--bg-color);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--slider-color);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 h1 {
     font-size: 4.7rem;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 8%;
     letter-spacing: 1px;
-    color: #374251;
+    color: var(--standout);
 }
 
-h1 span#carson {
-    color: #6a00ff;
-    animation-name: h1-color-light;
+h1 span {
+   margin-left: 1%;
 }
 
 p span.stand-out {
-    color: #374251;
+    color: var(--standout);
 }
 
 article p {
@@ -41,6 +113,7 @@ article p {
     line-height: 160%;
     font-weight: 300;
     letter-spacing: .5px;
+    color: var(--font-color);
 }
 
 article a#ig:hover {
@@ -60,7 +133,7 @@ article a#ig:hover {
  }
 
  article a#github:hover {
-     color: magenta;
+     color: #34495e;
  }
 
 
@@ -74,6 +147,7 @@ article a#ig:hover {
 
 footer p {
     margin: 0 auto;
+    color: var(--footer-color);
 }
 
 footer p, footer a {
@@ -84,7 +158,7 @@ footer p, footer a {
 }
 
 footer p:hover {
-    color: #6000e6;
+    color: var(--footer-hover);
 }
 
 footer a {
@@ -92,7 +166,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #6a00ff;
+    color: var(--footer-hover);
 }
 
 /* MEDIA QUERIES */
@@ -182,11 +256,11 @@ footer a:hover {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
-        color: #D8DADC;
+        color: #999999;
     }
 
     a {
-        color: #D8DADC;
+        color: #999999;
     }
 
     h1 {
