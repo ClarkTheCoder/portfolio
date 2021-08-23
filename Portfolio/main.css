@@ -1,10 +1,11 @@
 :root {
     --font-color: #374251;
     --slider-color: #374351;
-    --bg-color: #F5F7F9;
+    --bg-color: #f3f3f3;
     --standout: #374251;
     --footer-color: #374251;
     --footer-hover: #6000e6;
+    --theme-icon: #374351;
 }
 
 [data-theme="dark"] {
@@ -12,8 +13,9 @@
     --bg-color: black;
     --slider-color: #f3f3f3;
     --standout: white;
-    --footer-color: white;
+    --footer-color: #777;
     --footer-hover: #FFDC00;
+    --theme-icon: white;
 }
 
 body {
@@ -40,7 +42,6 @@ main {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 10px;
   }
 
   .theme-switch {
@@ -91,6 +92,12 @@ main {
   .slider.round:before {
     border-radius: 50%;
   }
+
+#theme-icon {
+    color: var(--theme-icon);
+    font-size: .7rem;
+    margin-left: .6%;
+}
 
 h1 {
     font-size: 4.7rem;
@@ -157,8 +164,6 @@ article a#ig:hover {
     margin-top: 15%;
     margin-bottom: 2%;
     font-family: 'JetBrains Mono', monospace;
-    text-align: center;
-    text-transform: lowercase;
 }
 
 footer p {
@@ -238,6 +243,9 @@ footer a:hover {
     h1 {
         font-size: 3.1rem;
     }
+    .theme-switch-wrapper {
+        display: none;
+    }
 
     h1 span#hand {
         font-size: 2.9rem;
@@ -256,6 +264,10 @@ footer a:hover {
    
     #container {
        width: 90%;
+   }
+
+   .theme-switch-wrapper {
+       display: none;
    }
    
     h1 {
